@@ -2,11 +2,10 @@
   <button
     @mouseenter="mouseEnter"
     @mouseleave="mouseLeave"
-    class="bg-yellow py-2 w-2/6 rounded-full focus:outline-none flex justify-center items-center"
+    class="transition duration-300 ease bg-yellow py-2 w-2/6 rounded-full focus:outline-none flex justify-center items-center"
   >
     <p>{{text}}</p>
     <slot></slot>
-
     <transition name="icon-fade">
       <svg
         xmlns="http://www.w3.org/2000/svg"
@@ -15,7 +14,7 @@
         color="red"
         viewBox="0 0 24 24"
         width="24"
-        class="mx-2"
+        class="mx-1"
       >
         <path d="M0 0h24v24H0z" fill="none" />
         <path
